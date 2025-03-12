@@ -1,2 +1,2 @@
-# da947e_sandbox
+# dbt-training
 Private repo for learning and exploring
