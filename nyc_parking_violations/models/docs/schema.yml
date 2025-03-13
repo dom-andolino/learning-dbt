@@ -1,1 +1,17 @@
-
+models:
+  - name: first_model
+    description: first model basic select from raw table
+    columns:
+      - name: code
+        description: '{{ doc("violation_code") }}'
+      - name: definition
+        description: '{{ doc("definition") }}'
+      - name: manhattan_96th_st_below
+        description: '{{ doc("manhattan_96th_st_below") }}'
+      - name: all_other_areas
+        description: The fee in $USD for a violation not on or below Manhattan 96th Street.
+  - name: ref_model
+    description: references another model to define order of build
+    columns:
+      - name: num_rows
+        description: total row count
