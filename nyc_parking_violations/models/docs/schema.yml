@@ -4,6 +4,10 @@ models:
     columns:
       - name: code
         description: '{{ doc("violation_code") }}'
+        tests:
+          - unique
+          - not_null
+          - generic_not_null
       - name: definition
         description: '{{ doc("definition") }}'
       - name: manhattan_96th_st_below
