@@ -1,26 +1,23 @@
+# Scratchpad
+
 Goal: Learn DBT, Airflow, and Databricks. 
 
-TODO:
 
-DONE:
+## TODO 
+
+## DONE
     PLE 70028551 - Data Engineering with dbt
 
-Env Setup/Commands:
-    python -m venv .venv
-        create virtual env in repo root
-    .venv\Scripts\activate
-        activate venv
 
-    python.exe -m pip install --upgrade pip
-
+## Env Setup/Commands
     pip install dbt-core
     pip install dbt-duckdb
-    pip install duckdb
     pip install dbt-snowflake
 
     dbt init
         give project name, creates folder with boilerplate files/folders
     dbt_project.yml
+        configure to store test failures or not
 
     cd nyc_parking_violations
         make sure you are in porject dir when running dbt commands or for profiles.yml
@@ -52,7 +49,10 @@ Env Setup/Commands:
         uses "jinja" to support dynamic variables in schema.yml, avoids repeats, complys with DRY principal
         '{{ doc("<docs blocks name>") }}'
 
-Misc Notes:
+    dbt test
+        will execute all tests in your dbt project and provide a summary of the results.
+
+## Misc Notes
     /models/table_name.sql
         the name of this file will be the name of the table created in the db
 
