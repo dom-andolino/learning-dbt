@@ -6,8 +6,16 @@ DONE:
     PLE 70028551 - Data Engineering with dbt
 
 Env Setup/Commands:
+    python -m venv .venv
+        create virtual env in repo root
+    .venv\Scripts\activate
+        activate venv
+
+    python.exe -m pip install --upgrade pip
+
     pip install dbt-core
     pip install dbt-duckdb
+    pip install duckdb
     pip install dbt-snowflake
 
     dbt init
