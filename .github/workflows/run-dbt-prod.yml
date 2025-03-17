@@ -35,6 +35,6 @@ jobs:
       run: |
         dbt test --target prod
     - name: Run Test Python script
-        env:
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: python test_python_script.py
+      env:
+        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      run: python test_python_script.py
