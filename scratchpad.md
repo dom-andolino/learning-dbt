@@ -7,7 +7,7 @@ Goal: Learn DBT, Airflow, and Databricks.
 
 ## DONE
     PLE 70028551 - Data Engineering with dbt
-
+        https://www.linkedin.com/learning/data-engineering-with-dbt/
 
 ## Env Setup/Commands
     pip install dbt-core
@@ -36,6 +36,9 @@ Goal: Learn DBT, Airflow, and Databricks.
     dbt run
         Runs all the dbt models end-to-end, executes the SQL code, and materialize the tables based on the profile configurations.
 
+    dbt run --target prod 
+        to specifically update our new production database.
+
     dbt docs generate
         goes into /target
 
@@ -51,6 +54,16 @@ Goal: Learn DBT, Airflow, and Databricks.
 
     dbt test
         will execute all tests in your dbt project and provide a summary of the results.
+
+
+    /.github/workflows/run-dbt-prod.yml
+        what/when to run github action
+
+    DBT_PROFILES_DIR
+        environment variable
+    DBT_PROJECT_DIR
+        environment variable
+
 
 ## Misc Notes
     /models/table_name.sql
