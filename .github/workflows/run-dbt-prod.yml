@@ -1,10 +1,10 @@
 name: run_dbt_prod
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  #push:
+    #branches: [ "main" ]
+  #pull_request:
+    #branches: [ "main" ]
   # schedule:
   #   - cron: '0 8 * * *'
 
@@ -34,3 +34,7 @@ jobs:
     - name: Test dbt Prod
       run: |
         dbt test --target prod
+    - name: Run Test Python script
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: python test_python_script.py
