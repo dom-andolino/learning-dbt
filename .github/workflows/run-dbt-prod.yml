@@ -29,7 +29,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run dbt Prod
       run: |
-        dbt debug
         dbt compile --target prod
         dbt run --target prod
     - name: Test dbt Prod
