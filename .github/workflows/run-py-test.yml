@@ -16,6 +16,15 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run Test Python script
+      id: run-test-py-script
       env:
         GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
       run: python test_python_script.py
+    - name: Commit and Push Changes
+      if: steps.run-test-py-script.outcome == 'success'
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add data/test_python_script_output.csv
+        git commit -m "Update CSV file"
+        git push origin main
