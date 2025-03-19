@@ -1,2 +1,2 @@
-# dbt-training
-Private repo for learning and exploring
+# learning-dbt
+Learning and exploring DBT (Data Build Tool)
