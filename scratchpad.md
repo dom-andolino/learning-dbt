@@ -71,3 +71,9 @@ Goal: Learn DBT, Airflow, and Databricks.
 
     FROM {{ref('first_model')}}
 
+## Resources
+    https://github.com/LinkedInLearning/data-engineering-with-data-build-tool-dbt-4458303/blob/main/assets/tutorial_files/dbt_project_walkthrough.md
+    https://medium.com/@c4caesar/automating-daily-csv-updates-with-github-actions-a-quick-tutorial-86f2c3d77e9a
+    https://github.com/caesarw0/BC-ChildCare-API/blob/main/.github/workflows/update_csv.yml
+    https://docs.getdbt.com/docs/build/python-models
+
