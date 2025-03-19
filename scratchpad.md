@@ -1,13 +1,13 @@
 # Scratchpad
 
-Goal: Learn DBT, Airflow, and Databricks. 
-
-
 ## TODO 
 
-## DONE
-    PLE 70028551 - Data Engineering with dbt
-        https://www.linkedin.com/learning/data-engineering-with-dbt/
+## Resources
+    https://github.com/LinkedInLearning/data-engineering-with-data-build-tool-dbt-4458303/blob/main/assets/tutorial_files/dbt_project_walkthrough.md
+    https://medium.com/@c4caesar/automating-daily-csv-updates-with-github-actions-a-quick-tutorial-86f2c3d77e9a
+    https://github.com/caesarw0/BC-ChildCare-API/blob/main/.github/workflows/update_csv.yml
+    https://docs.getdbt.com/docs/build/python-models
+    
 
 ## Env Setup/Commands
     python -m venv .venv
@@ -78,10 +78,4 @@ Goal: Learn DBT, Airflow, and Databricks.
         the name of this file will be the name of the table created in the db
 
     FROM {{ref('first_model')}}
-
-## Resources
-    https://github.com/LinkedInLearning/data-engineering-with-data-build-tool-dbt-4458303/blob/main/assets/tutorial_files/dbt_project_walkthrough.md
-    https://medium.com/@c4caesar/automating-daily-csv-updates-with-github-actions-a-quick-tutorial-86f2c3d77e9a
-    https://github.com/caesarw0/BC-ChildCare-API/blob/main/.github/workflows/update_csv.yml
-    https://docs.getdbt.com/docs/build/python-models
 
