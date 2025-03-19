@@ -23,8 +23,8 @@ jobs:
     - name: Commit and Push Changes
       if: steps.run-test-py-script.outcome == 'success'
       run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
+        git config --global user.name "Test random name"
+        git config --global user.email "test_rand_nm@github.com"
         git add data/test_python_script_output.csv
         git commit -m "Update CSV file"
         git push origin main
