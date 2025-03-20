@@ -15,7 +15,9 @@
     .venv\Scripts\activate
         activate venv
 
-    python.exe -m pip install --upgrade pip
+    python -m pip install --upgrade pip
+
+    pip install -r requirements.txt
     
     pip install dbt-core
     pip install dbt-duckdb
